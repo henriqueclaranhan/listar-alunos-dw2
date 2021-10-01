@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#form-box {
+    align-self: center;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #2a88bb;
+    filter: drop-shadow(15px 20px 20px #5bafdc50);
+    width: 300px;
+    padding: 1.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+#form-title {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    padding-bottom: 2px;
+}
+
+.input-field p {
+    margin-left: 2px;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.input-field input {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #2a88bb;
+    border-radius: 3px;   
+}
+
+input[type="text"],
+input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+}
+
+form div:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.input-field input:focus, .input-field textarea:focus {
+    transition: 0.15s;
+    box-shadow: 0 0 4px #2a88bb;
+    outline-offset: 2px;
+    outline-color: #2a88bb;
+}
+
+::placeholder { 
+    color: rgba(0, 0, 0, 0.733);
+    opacity: 80%;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #2a88bb;
+    align-self: center;
+    width: 97%;
+    margin-top: -3px;
+}
+
+#submit-button {
+    cursor: pointer;
+    margin-top: 8px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 3px;
+    outline: none;
+    background-color: #2a88bb;
+    color: white;
+    border: none;
+}
+
+#submit-button:active {
+    transition: 0.15s ease;
+    background-color: #0d5a83;
+    color: rgb(194, 194, 194);
+}
+
+@media (min-width: 960px) {
+    #form-box {
+        width: 400px;
+    }
+}
