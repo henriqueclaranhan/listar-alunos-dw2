@@ -1,0 +1,42 @@
+#students-not-found-box {
+    position: absolute;
+    top: 50%; right: 50%;
+    width: 100%;
+    transform: translate(50%,-50%);
+}
+
+#students-not-found-box img {
+    width: 170px;
+}
+
+#students-not-found-box h2 {
+    text-align: center;
+    font-size: 26px;
+}
+
+#students-not-found-box p {
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 463px) {
+    #students-not-found-box {
+        margin-top: 18%;
+    }
+
+    #students-not-found-box img {
+        width: 145px;
+    }
+
+    #students-not-found-box h2 {
+        font-size: 23px;
+        padding: 0.2rem 2rem;
+    }
+    
+    #students-not-found-box p {
+        font-size: 20px;
+        padding: 0 2rem;
+    }
+}
