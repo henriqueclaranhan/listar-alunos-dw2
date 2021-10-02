@@ -33,5 +33,18 @@
 
             return $query;
         }
+
+        public function readById($idStudent) {
+            $db = new Database;
+            $connection = $db->getConnection();
+            
+            $sql = "SELECT * FROM aluno WHERE aluno.id = $idStudent";
+
+            $stmt = $connection->query($sql);
+            $stmt->setFetchMode(PDO::FETCH_ASSOC);
+            $query = $stmt->fetchAll();
+
+            return $query;
+        }
     }
 ?>
