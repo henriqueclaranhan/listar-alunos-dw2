@@ -1,0 +1,28 @@
+#student-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 45px 3rem 6rem 3rem;
+}
+
+#student-data .student-container {
+	width: 100%;
+	margin-top: 20px;
+
+    border-radius: 5px;
+    border: 1px solid var(--blue);
+    backdrop-filter: blur(4px);
+
+    transition: 0.4s;
+
+    /*display: flex;*/
+    /*flex-direction: column;*/
+
+    background-color: #f4f7fa;
+    filter: drop-shadow(0 5px 10px #5050502c);
+}
+
+#student-data .profile-pic{
+	margin: 2rem;
+}
