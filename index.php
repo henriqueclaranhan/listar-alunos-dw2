@@ -40,7 +40,7 @@
 		<?php
 			foreach ($studentInfo->read() as $student) {
 				echo '
-					<div class="student-card">
+					<div class="student-card" onclick="window.location = window.location.origin + \'/see-student.php?id=', $student['id'],'\'">
 						<div class="profile-pic">
 							<img src="public/assets/icons/person.svg" alt="Foto de perfil">
 						</div>
